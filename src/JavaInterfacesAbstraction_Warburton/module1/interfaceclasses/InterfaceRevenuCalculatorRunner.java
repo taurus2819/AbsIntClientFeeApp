@@ -1,10 +1,6 @@
 package JavaInterfacesAbstraction_Warburton.module1.interfaceclasses;
 
 import JavaInterfacesAbstraction_Warburton.module1.ClientEngagement;
-import JavaInterfacesAbstraction_Warburton.module1.abstractclasses.FixedFeeCalculator;
-import JavaInterfacesAbstraction_Warburton.module1.abstractclasses.HourlyPriceCalculator;
-import JavaInterfacesAbstraction_Warburton.module1.abstractclasses.RevenueCalculator;
-import JavaInterfacesAbstraction_Warburton.module1.abstractclasses.RoyaltyFeeCalculator;
 
 public class InterfaceRevenuCalculatorRunner {
 
@@ -14,27 +10,27 @@ public class InterfaceRevenuCalculatorRunner {
                                                                             100,
                                                                             15_000);
 
-        final HourlyPriceCalculator hpc = new HourlyPriceCalculator();
+        final InterfaceHourlyPriceCalculator hpc = new InterfaceHourlyPriceCalculator();
         System.out.println("Using Interface Class: Hourly Rate = " + hpc.priceCalculate(clientEngagement));
 
-        final HourlyPriceCalculator hpc1 = new HourlyPriceCalculator(25);
+        final InterfaceHourlyPriceCalculator hpc1 = new InterfaceHourlyPriceCalculator(25);
         System.out.println("Using Interface Class: Hourly Rate = " + hpc1.priceCalculate(clientEngagement));
 
-        final FixedFeeCalculator ffc = new FixedFeeCalculator();
+        final InterfaceFixedFeeCalculator ffc = new InterfaceFixedFeeCalculator();
         System.out.println("Using Interface class: Fixed fee = " + ffc.priceCalculate(clientEngagement));
 
-        final FixedFeeCalculator ffc1 = new FixedFeeCalculator(200);
+        final InterfaceFixedFeeCalculator ffc1 = new InterfaceFixedFeeCalculator(200);
         System.out.println("Using Interface class: Fixed fee = " + ffc1.priceCalculate(clientEngagement));
 
-        final RoyaltyFeeCalculator rfc = new RoyaltyFeeCalculator(RoyaltyFeeCalculator.ROYALTY_FEE);
+        final InterfaceRoyaltyFeeCalculator rfc = new InterfaceRoyaltyFeeCalculator(InterfaceRoyaltyFeeCalculator.ROYALTY_FEE);
         System.out.println("Using Interface class: Royalty fee = " + rfc.priceCalculate(clientEngagement));
 
         //polymorphism
 
-        RevenueCalculator rc = new HourlyPriceCalculator(30);
+        RevenueCalculatorInterface rc = new InterfaceHourlyPriceCalculator(30);
         System.out.println("Using Interface class - Polymorphism : Hourly rate = " + rc.priceCalculate(clientEngagement));
 
-        rc = new FixedFeeCalculator(350);
+        rc = new InterfaceFixedFeeCalculator(350);
         System.out.println("Using Interface class - Polymorphism : Fixed rate = " + rc.priceCalculate(clientEngagement));
     }
 }

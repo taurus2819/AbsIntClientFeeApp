@@ -2,12 +2,14 @@ package JavaInterfacesAbstraction_Warburton.module1.interfaceclasses;
 
 import JavaInterfacesAbstraction_Warburton.module1.ClientEngagement;
 
-public class RoyaltyFeeCalculator implements RevenueCalculator {
+public class InterfaceRoyaltyFeeCalculator implements RevenueCalculatorInterface {
 
     public static final double ROYALTY_FEE = 0.15;
     private final double royaltyFee;
 
-    public RoyaltyFeeCalculator(double royaltyFee) {
+    public InterfaceRoyaltyFeeCalculator(){this.royaltyFee = ROYALTY_FEE;}
+
+    public InterfaceRoyaltyFeeCalculator(double royaltyFee) {
         this.royaltyFee = royaltyFee;
     }
 

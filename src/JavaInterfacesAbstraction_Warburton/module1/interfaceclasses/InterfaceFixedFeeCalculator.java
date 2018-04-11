@@ -2,16 +2,16 @@ package JavaInterfacesAbstraction_Warburton.module1.interfaceclasses;
 
 import JavaInterfacesAbstraction_Warburton.module1.ClientEngagement;
 
-public class FixedFeeCalculator implements RevenueCalculator {
+public class InterfaceFixedFeeCalculator implements RevenueCalculatorInterface {
 
     private static final double FIXED_FEE = 500;
     private final double fixedFee;
 
-    public FixedFeeCalculator(){
+    public InterfaceFixedFeeCalculator(){
         this.fixedFee = FIXED_FEE;
     }
 
-    public FixedFeeCalculator(final double fixedFee) {
+    public InterfaceFixedFeeCalculator(final double fixedFee) {
         this.fixedFee = fixedFee;
     }
 
