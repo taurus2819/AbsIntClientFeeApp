@@ -1,6 +1,6 @@
-package JavaInterfacesAbstraction_Warburton.module1.before;
+package JavaInterfacesAbstraction_war.module1.before;
 
-import JavaInterfacesAbstraction_Warburton.module1.ClientEngagement;
+import JavaInterfacesAbstraction_war.module1.ClientEngagement;
 
 public class RevenueCalculatorRunner {
 

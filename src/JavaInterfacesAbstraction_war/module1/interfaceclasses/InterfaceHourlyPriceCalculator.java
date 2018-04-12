@@ -1,17 +1,17 @@
-package JavaInterfacesAbstraction_Warburton.module1.abstractclasses;
+package JavaInterfacesAbstraction_war.module1.interfaceclasses;
 
-import JavaInterfacesAbstraction_Warburton.module1.ClientEngagement;
+import JavaInterfacesAbstraction_war.module1.ClientEngagement;
 
-public class HourlyPriceCalculator extends RevenueCalculator {
+public class InterfaceHourlyPriceCalculator implements RevenueCalculatorInterface {
 
     private static final double HOURLY_PRICE = 50;
     private final double hourlyPrice;
 
-    public HourlyPriceCalculator() {
+    public InterfaceHourlyPriceCalculator() {
         this.hourlyPrice = HOURLY_PRICE;
     }
 
-    public HourlyPriceCalculator(final double hourlyPrice){
+    public InterfaceHourlyPriceCalculator(final double hourlyPrice){
         this.hourlyPrice = hourlyPrice;
     }
 

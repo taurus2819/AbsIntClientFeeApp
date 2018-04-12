@@ -1,6 +1,6 @@
-package JavaInterfacesAbstraction_Warburton.module1.interfaceclasses;
+package JavaInterfacesAbstraction_war.module1.interfaceclasses;
 
-import JavaInterfacesAbstraction_Warburton.module1.ClientEngagement;
+import JavaInterfacesAbstraction_war.module1.ClientEngagement;
 
 public class InterfaceRevenuCalculatorRunner {
 
@@ -34,3 +34,4 @@ public class InterfaceRevenuCalculatorRunner {
         System.out.println("Using Interface class - Polymorphism : Fixed rate = " + rc.priceCalculate(clientEngagement));
     }
 }
+

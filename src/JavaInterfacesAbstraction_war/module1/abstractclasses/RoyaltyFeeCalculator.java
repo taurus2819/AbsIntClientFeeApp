@@ -1,6 +1,6 @@
-package JavaInterfacesAbstraction_Warburton.module1.abstractclasses;
+package JavaInterfacesAbstraction_war.module1.abstractclasses;
 
-import JavaInterfacesAbstraction_Warburton.module1.ClientEngagement;
+import JavaInterfacesAbstraction_war.module1.ClientEngagement;
 
 public class RoyaltyFeeCalculator extends RevenueCalculator {
 
