@@ -6,7 +6,7 @@ public class AbstractRevenuCalculatorRunner {
 
     public static void main(String[] args) {
 
-        final ClientEngagement clientEngagement = new ClientEngagement("Pluralsight",
+        final ClientEngagement clientEngagement = new ClientEngagement("PLS",
                                                                             100,
                                                                             15_000);
 

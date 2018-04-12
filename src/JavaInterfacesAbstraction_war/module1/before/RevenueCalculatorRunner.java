@@ -7,7 +7,8 @@ public class RevenueCalculatorRunner {
     public static void main(String[] args) {
 
         final ClientEngagement clientEngagement =
-                new ClientEngagement("Pluralsight", 100, 15_000);
+                new ClientEngagement("P" +
+                        "PlS", 100, 15_000);
 
         //hourly
         final double hourlyprice = RevenueCalculator.price("Hourly", clientEngagement);
